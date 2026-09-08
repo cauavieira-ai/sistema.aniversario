@@ -148,9 +148,9 @@ erDiagram
 
 &#x20;   RESPONSAVEL ||--|| ANIVERSARIANTE : Cadastrar
 
-&#x20;   FESTA ||--o |{ CONVITE : Gerar
+&#x20;   FESTA ||--o { CONVITE : Gerar
 
-&#x20;   ANIVERSARIANTE ||--o |{ CONVIDADO : Convidar
+&#x20;   ANIVERSARIANTE ||--o { CONVIDADO : Convidar
 
 &#x20;   CONVIDADO ||--|| CONVITE : Possuir
 
