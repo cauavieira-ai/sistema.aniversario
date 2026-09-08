@@ -58,85 +58,85 @@
 
 
 
-\## 3. Sugestão de Atributos
+## 3. Sugestão de Atributos
 
 
 
-\### Responsavel
+### Responsavel
 
-\- `id\\\_responsavel` (PK)
+- `id\\\_responsavel` (PK)
 
-\- `nome`
+- `nome`
 
-\- `telefone`
+- `telefone`
 
-\- `email`
-
-
-
-\### Festa
-
-\- `id\\\_festa` (PK)
-
-\- `nome\\\_evento` (Ex: "15 Anos da Rebeca")
-
-\- `data\\\_hora`
-
-\- `local`
+- `email`
 
 
 
-\### Aniversariante
+### Festa
 
-\- `id\\\_aniversariante` (PK)
+- `id\\\_festa` (PK)
 
-\- `nome` (Ex: "Rebeca")
+- `nome\\\_evento` (Ex: "15 Anos da Rebeca")
 
-\- `data\\\_nascimento`
+- `data\\\_hora`
 
-
-
-\### Convidado
-
-\- `id\\\_convidado` (PK)
-
-\- `nome\\\_completo`
-
-\- `grupo\\\_familiar` (Ex: "Família Silva" - agrupa os parentes no sistema)
-
-\- `eh\\\_titular` (Booleano - indica o responsável pelo grupo familiar)
-
-\- `status\\\_rsvp` (Pendente, Confirmado, Recusado)
+- `local`
 
 
 
-\### Convite
+### Aniversariante
 
-\- `id\\\_convite` (PK)
+- `id\\\_aniversariante` (PK)
 
-\- `codigo\\\_qr` (Único para cada convidado)
+- `nome` (Ex: "Rebeca")
 
-\- `id\\\_convidado` (FK - Vincula diretamente ao convidado)
-
-\- `status\\\_convite` (Ativo, Utilizado, Cancelado)
+- `data\\\_nascimento`
 
 
 
-\### Portaria
+### Convidado
 
-\- `id\\\_entrada` (PK)
+- `id\\\_convidado` (PK)
 
-\- `data\\\_hora\\\_entrada`
+- `nome\\\_completo`
 
-\- `operador\\\_portaria`
+- `grupo\\\_familiar` (Ex: "Família Silva" - agrupa os parentes no sistema)
+
+- `eh\\\_titular` (Booleano - indica o responsável pelo grupo familiar)
+
+- `status\\\_rsvp` (Pendente, Confirmado, Recusado)
 
 
 
-\---
+### Convite
+
+- `id\\\_convite` (PK)
+
+- `codigo\\\_qr` (Único para cada convidado)
+
+- `id\\\_convidado` (FK - Vincula diretamente ao convidado)
+
+- `status\\\_convite` (Ativo, Utilizado, Cancelado)
 
 
 
-\## 4. Diagrama Entidade e Relacionamento (DER)
+### Portaria
+
+- `id\\\_entrada` (PK)
+
+- `data\\\_hora\\\_entrada`
+
+- `operador\\\_portaria`
+
+
+
+---
+
+
+
+## 4. Diagrama Entidade e Relacionamento (DER)
 
 
 
@@ -144,16 +144,16 @@
 
 erDiagram
 
-\&#x20;   RESPONSAVEL ||--o{ FESTA : Organizar
+&#x20;   RESPONSAVEL ||--o{ FESTA : Organizar
 
-\&#x20;   RESPONSAVEL ||--|| ANIVERSARIANTE : Cadastrar
+&#x20;   RESPONSAVEL ||--|| ANIVERSARIANTE : Cadastrar
 
-\&#x20;   FESTA ||--o{ CONVITE : Gerar
+&#x20;   FESTA ||--o{ CONVITE : Gerar
 
-\&#x20;   ANIVERSARIANTE ||--o{ CONVIDADO : Convidar
+&#x20;   ANIVERSARIANTE ||--o{ CONVIDADO : Convidar
 
-\&#x20;   CONVIDADO ||--|| CONVITE : Possuir
+&#x20;   CONVIDADO ||--|| CONVITE : Possuir
 
-\&#x20;   CONVITE ||--o| PORTARIA : Validar
+&#x20;   CONVITE ||--o| PORTARIA : Validar
 
 
