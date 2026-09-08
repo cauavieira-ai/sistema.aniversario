@@ -1,34 +1,34 @@
-\# Modelo de Entidade e Relacionamento (MER) - 15 Anos da Rebeca
+# Modelo de Entidade e Relacionamento (MER) - 15 Anos da Rebeca
 
 
 
-\## 1. Entidades
+## 1. Entidades
 
 
 
-\- \*\*Responsavel:\*\* Representa os pais da Rebeca (organizadores e responsáveis pelo evento).
+ \*\*Responsavel:\*\* Representa os pais da Rebeca (organizadores e responsáveis pelo evento).
 
-\- \*\*Festa:\*\* Representa o evento específico da Festa de 15 Anos da Rebeca.
+- \*\*Festa:\*\* Representa o evento específico da Festa de 15 Anos da Rebeca.
 
-\- \*\*Aniversariante:\*\* Representa a Rebeca.
+- \*\*Aniversariante:\*\* Representa a Rebeca.
 
-\- \*\*Convidado:\*\* Representa cada pessoa individual cadastrada para comparecer à festa.
+- \*\*Convidado:\*\* Representa cada pessoa individual cadastrada para comparecer à festa.
 
-\- \*\*Convite:\*\* Representa o passe/credencial digital (QR Code) individual gerado para cada convidado.
+- \*\*Convite:\*\* Representa o passe/credencial digital (QR Code) individual gerado para cada convidado.
 
-\- \*\*Portaria:\*\* Representa o registro de check-in realizado na entrada do evento.
-
-
-
-\---
+- \*\*Portaria:\*\* Representa o registro de check-in realizado na entrada do evento.
 
 
 
-\## 2. Relacionamentos e Cardinalidades
+---
 
 
 
-\- \*\*\[Responsavel] (1,1) <Organizar> (1,n) \[Festa]\*\*
+## 2. Relacionamentos e Cardinalidades
+
+
+
+- \*\*\[Responsavel] (1,1) <Organizar> (1,n) \[Festa]\*\*
 
 &#x20; - \*Explicação:\* Os Pais/Responsáveis organizam o evento da festa de 15 anos.
 
