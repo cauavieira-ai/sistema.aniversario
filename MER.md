@@ -138,22 +138,7 @@
 
 ## 4. Diagrama Entidade e Relacionamento (DER)
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6283b2b2-ce96-4da1-b60d-9db6a25235dd" />
 
-
-```mermaid
-
-erDiagram
-
-&#x20;   RESPONSAVEL ||--o{ FESTA : Organizar
-
-&#x20;   RESPONSAVEL ||--|| ANIVERSARIANTE : Cadastrar
-
-&#x20;   FESTA ||--o{ CONVITE : Gerar
-
-&#x20;   ANIVERSARIANTE ||--o{ CONVIDADO : Convidar
-
-&#x20;   CONVIDADO ||--|| CONVITE : Possuir
-
-&#x20;   CONVITE ||--o| PORTARIA : Validar
 
 
